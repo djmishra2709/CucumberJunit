@@ -9,7 +9,7 @@ public class login {
 
 	@Given("user calculated {int}\\/{int}")
 	public void user_calculated(Integer int1, Integer int2) {
-		int i = 1/0;
+		int i = 1/1;
 		System.out.println(i);
 	}
 
