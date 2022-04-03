@@ -7,7 +7,8 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features", 
 glue= {"steps"},
-plugin = {"json:target/cucumber.json"})
+plugin = {"html:target/cucumber-html-report","json:target/cucumber.json","pretty:target/cucumber-pretty.txt"
+		,"junit:target/cucmber-result.xml"})
 public class TestRunner {
 
 }
